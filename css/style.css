@@ -128,8 +128,7 @@ footer {
 }
 
 .projects {
-  margin-top: 200px;
-  height: 100vh;
+  margin-top: 100px;
   display: -ms-flexbox;
   display: flex;
 }

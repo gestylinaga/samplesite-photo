@@ -135,26 +135,22 @@ footer {
   }
 }
 
+
 // Project Grid Layout:
 .projects {
-  margin-top: 200px;
-  height: 100vh;
+  margin-top: 100px;
   display: -ms-flexbox;
   display: flex;
 }
 
-// NOTE: project items don't show on overflow
 .projectsColumn {
   -ms-flex-preferred-size: 33%;
   flex-basis:33%;
   display:-ms-flexbox;
   -ms-flex-direction:column;
-  //-ms-flex-wrap:wrap;
   display:flex;
   -ms-flex-direction:column;
   flex-direction:column;
-  //-ms-flex-wrap:wrap;
-  //flex-wrap:wrap;
   font-size:0;
 }
 

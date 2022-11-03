@@ -1,17 +1,8 @@
 # samplesite-photo
-a Portfolio-Style Website Sample for a Photographer
+a **Sample** *'Portfolio-Style'* **Site** for a Photographer to showcase their work online
 
-[samplesite-photo](https://gesty.dev/samplesite-photo) <- Live Site Link
+[samplesite-photo](https://gesty.dev/samplesite-photo) <- Live 🌐 Site Link 
 
-All "photos" from [unsplash.com](https://unsplash.com/)
+All 📷 Photos from [unsplash.com](https://unsplash.com/)
 
-by: [Gesty Linaga](https://gesty.dev)
-
-
----
-
-```javascript 
-/* TODO:
-  - fix photo grids
-*/
-```
+by: [Gesty Linaga](https://gesty.dev) 🏄 
