@@ -1,0 +1,169 @@
+// samplesite-photo by: gesty 🏄
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Google Fonts:
+h1, h2, h3 {
+  font-family: 'Caveat', cursive;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  margin-top: 150px;
+  gap: 10px;
+}
+
+@mixin flexCol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand {
+  @include flexCol;
+}
+
+// Animations:
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(20%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+.delay {
+  &:nth-child(2) {
+    transition-delay: 200ms;
+  }
+  &:nth-child(3) {
+    transition-delay: 400ms;
+  }
+  &:nth-child(4) {
+    transition-delay: 600ms;
+  }
+  &:nth-child(5) {
+    transition-delay: 700ms;
+  }
+  &:nth-child(6) {
+    transition-delay: 800ms;
+  }
+  &:nth-child(7) {
+    transition-delay: 900ms;
+  }
+}
+
+.absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.carousel-item {
+  height: 100%;
+}
+
+
+footer {
+  @include flexCol;
+  margin-bottom: 10px;
+}
+
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+
+// Hover Overlay Effect:
+.hovereffect{
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .overlayText {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #000;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: opacity 0.35s, transform 0.35s;
+  }
+  &:hover .overlay-text {
+    opacity: 1;
+    filter: alpha(opacity=100)
+  }
+  img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.35s, transform 0.35s;
+    backface-visibility: hidden
+  }
+  &:hover img {
+    opacity: 0.3;
+    filter: alpha(opacity=0)
+  }
+}
+
+// Project Grid Layout:
+.projects {
+  margin-top: 200px;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+// NOTE: project items don't show on overflow
+.projectsColumn {
+  -ms-flex-preferred-size: 33%;
+  flex-basis:33%;
+  display:-ms-flexbox;
+  -ms-flex-direction:column;
+  //-ms-flex-wrap:wrap;
+  display:flex;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  //-ms-flex-wrap:wrap;
+  //flex-wrap:wrap;
+  font-size:0;
+}
+
+
+// 768px = Bootstrap "Medium" breakpoint
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 95vw;
+  }
+}
+
+// by Gesty Linaga
