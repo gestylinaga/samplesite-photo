@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Gesty Linaga">
-    <title>Sample Site - Photo</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>Projects | Sample Site - Photo</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Bootstrap Icons-->
@@ -15,18 +15,18 @@
     <!-- Google Font: Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Custom Css/Js-->
-    <link href="./css/style.css" rel="stylesheet">
-    <script defer src="./js/script.js"></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <script defer src="../js/script.js"></script>
   </head>
 
 
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top hidden delay">
+    <nav class="navbar navbar-expand-md navbar-light hidden bg-light fixed-top">
       <div class="container-fluid">
         <!-- Brand -->
-        <a class="navbar-brand px-5" href="./">
+        <a class="navbar-brand px-5" href="../">
           <h2>Sample Site</h2>
           <h3 class="text-muted hidden delay">
             your name here
@@ -43,8 +43,8 @@
             <div class="col">
               <div class="d-flex justify-content-center"><h3 class="text-muted hidden delay"><i class="bi bi-arrow-down-short"></i><small>Example Links</small></h3></div>
               <div class="navbar-nav">
-                <a class="nav-link lead" href="./projects">Projects</a>
-                <a class="nav-link lead" href="./about">About</a>
+                <a class="nav-link lead" href="../projects">Projects</a>
+                <a class="nav-link lead" href="../about">About</a>
               </div>
             </div>
           </div>
@@ -53,48 +53,60 @@
     </nav> <!-- end of navbar -->
 
 
-    <!-- Carousel-->
-    <section class="absCenter mt-5">
-      <div class="container">
-        <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img 
-              src="./imgs/carousel/carousel1.jpg"
-              class="d-block w-100" 
-              alt="Sample Image 1">
-            </div>
-            <div class="carousel-item">
-              <img 
-              src="./imgs/carousel/carousel2.jpg"
-              class="d-block w-100" 
-              alt="Sample Image 2">
-            </div>
-            <div class="carousel-item">
-              <img 
-              src="./imgs/carousel/carousel3.jpg"
-              class="d-block w-100" 
-              alt="Sample Image 3">
+    <section class="main align-items-center h-100">
+      <div class="container-fluid mt-5">
+
+      <!--example-->
+      <div class="d-flex flex-column justify-content-center align-items-center mt-5 hidden delay">
+        <h3 class="text-muted hidden delay">
+          <i class="bi bi-arrow-down-short"></i>
+            Example Project Categories
+          <i class="bi bi-arrow-down-short"></i>
+        </h3>
+      </div>
+
+        <!--Project Categories-->
+        <div class="row gy-3 d-flex justify-content-center align-items-center">
+
+          <!--Project Item-->
+          <div class="col-lg-5 col-sm-2 hidden delay">
+            <div class="container">
+              <div class="hovereffect">
+                <a href="./nature">
+                  <img class="img-fluid" src="../imgs/nature/col2/nature2.jpg" alt="Sample Image">
+                  <div class="overlay">
+                    <span class="overlayText"><h1>Nature</h1></span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> 
-        <div class="d-flex justify-content-center hidden delay"><h3 class="text-muted">Example Photo Carousel<i class="bi bi-arrow-up-short"></i></h3></div>
-      </div>  <!--end of carousel-->
 
+          <!--Project Item-->
+          <div class="col-lg-5 col-sm-2 hidden delay">
+            <div class="container">
+              <div class="hovereffect">
+                <a href="./portraits">
+                  <img class="img-fluid" src="../imgs/portraits/col2/portrait2.jpg" alt="Sample Image">
+                  <div class="overlay">
+                    <span class="overlayText"><h1>Portraits</h1></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
 
-      <!--signature-->
-      <footer class="mt-5 hidden delay"><small>Design by: <a class="text-decoration-none" href="https://gesty.dev">gesty</a><i class="bi bi-arrow-return-left"></i></small></footer>
+      </div> 
 
 
     </section>
+
+
+    <!--signature-->
+    <footer class="mt-5 hidden delay"><small>Design by: <a class="text-decoration-none" href="https://gesty.dev">gesty</a><i class="bi bi-arrow-return-left"></i></small></footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

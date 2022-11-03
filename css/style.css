@@ -98,6 +98,7 @@ footer {
 }
 .hovereffect .overlayText {
   font-size: 1.3rem;
+  font-family: "Caveat", cursive;
   font-weight: 300;
   color: #000;
   left: 50%;
@@ -109,7 +110,7 @@ footer {
   filter: alpha(opacity=0);
   transition: opacity 0.35s, transform 0.35s;
 }
-.hovereffect:hover .overlay-text {
+.hovereffect:hover .overlayText {
   opacity: 1;
   filter: alpha(opacity=100);
 }
